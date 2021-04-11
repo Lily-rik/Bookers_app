@@ -15,29 +15,36 @@
  */
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
-}
-
-
-
-
-.top {
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
 }
+
 
 .top p {
   margin: 33px;
 }
 
-.books-index {
-  font-size: 13px;
-  line-height: 18px;
-  margin: 33px;
+.form-with {
+  margin-top: 0;
+}
+
+.form-with-title {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-with-body {
+  margin-bottom : 10px;
+  display: block;
+}
+
+
+.form-with-submit {
+  margin-bottom: 10px;
+  display: block;
 }

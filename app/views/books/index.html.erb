@@ -1,9 +1,25 @@
-<div class="books-index">
+<body>
   <h1>Books</h1>
   <table>
     <th>Title</th>
     <th>Body</th>
   </table>
+
+
   <h2>New book</h2>
-  <%= form_with %>
-</div>
+  
+  <div class="form-with">
+    <%= form_with model:@book, local:true do |f| %>
+
+    <label>Title</label>
+    <%= f.text_field :title, :class => "form-with-title"%>
+
+    <label>Body</label>
+    <%= f.text_area :body, :class => "form-with-body" %>
+
+    <%= f.submit 'Create Book', :class => "form-with-submit" %>
+
+    <% end %>
+  </div>
+</body>
+
