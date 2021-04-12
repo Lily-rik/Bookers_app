@@ -4,21 +4,14 @@
     <tr>
       <th>Title</th>
       <th>Body</th>
-      <th></th>
     </tr>
     <% @books.each do |book| %>
     <tr>
-      <td>
-        <%= book.title %>
-      </td>
-      <td>
-        <%= book.body %>
-      </td>
-      <td>
-        <%= link_to "Show", book_path(book) %>
-        <%= link_to "Edit", edit_book_path(book) %>
-        <%= link_to "Destroy", book_path(book), method: :delete, "data-confirm" => "Are you sure?"%>
-      </td>
+      <td><%= book.title %></td>
+      <td><%= book.body %></td>
+      <td><%= link_to "Show", book_path(book), :class => "link" %></td>
+      <td><%= link_to "Edit", edit_book_path(book), :class => "link" %></td>
+      <td><%= link_to "Destroy", book_path(book), method: :delete, "data-confirm" => "Are you sure?", :class => "link" %></td>
     </tr>
     <% end %>
   </table>
@@ -28,11 +21,10 @@
 
   <%= render 'books/error', book: @book %>
 
-  <div class="form-with-box">
     <%= form_with model:@book, local:true do |f| %>
 
     <%= f.label :Title %>
-    <%= f.text_field :title, :class => "form-with"%>
+    <%= f.text_field :title, :class => "form-with" %>
 
     <%= f.label :body %>
     <%= f.text_area :body, :class => "form-with" %>
