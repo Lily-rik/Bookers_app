@@ -28,16 +28,16 @@
 
   <%= render 'books/error', book: @book %>
 
-  <div class="form-with">
+  <div class="form-with-box">
     <%= form_with model:@book, local:true do |f| %>
 
-    <label>Title</label>
-    <%= f.text_field :title, :class => "form-with-title"%>
+    <%= f.label :Title %>
+    <%= f.text_field :title, :class => "form-with"%>
 
-    <label>Body</label>
-    <%= f.text_area :body, :class => "form-with-body" %>
+    <%= f.label :body %>
+    <%= f.text_area :body, :class => "form-with" %>
 
-    <%= f.submit 'Create Book', :class => "form-with-submit" %>
+    <%= f.submit 'Create Book', :class => "form-with" %>
 
     <% end %>
   </div>

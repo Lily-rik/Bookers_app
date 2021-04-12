@@ -29,23 +29,14 @@ p {
   margin: 33px;
 }
 
-.form-with {
+.form-with-box {
   margin-top: 0;
 }
 
-.form-with-title {
+.form-with {
   margin-bottom: 10px;
   display: block;
 }
 
-.form-with-body {
-  margin-bottom : 10px;
-  display: block;
-}
 
-
-.form-with-submit {
-  margin-bottom: 10px;
-  display: block;
-}
 
