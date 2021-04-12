@@ -25,7 +25,7 @@ body {
 }
 
 
-.top p {
+p {
   margin: 33px;
 }
 
@@ -48,3 +48,4 @@ body {
   margin-bottom: 10px;
   display: block;
 }
+
